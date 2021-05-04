@@ -51,7 +51,6 @@ def rsvp(event_id):
         db.session.add(returning_guest)
         db.session.commit()
     else:
-        
         guest_email = request.form.get('email')
         guest_phone = request.form.get('phone')
         # TODO: Create a new guest with the given name, email, and phone, and 
